@@ -4710,7 +4710,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
       
  const helpmenu = `Konichiwa *${pushname}* Senpai,
 
-I am *Reeya*, a bot developed by *Secret xD *.
+I am *Reeya*, a bot developed by *Secret xD*.
 
 🔰 My prefix is:  ${prefix}
 
@@ -4785,7 +4785,7 @@ translate, fliptext, toletter
 
 
  『  *${global.BotName}*  』
- Powered by: *Fantox*
+ Powered by: *Secret xD*
 
  🔰 To use any of these commands type 
  " *${prefix}<Command name>* ".
