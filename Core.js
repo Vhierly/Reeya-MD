@@ -4719,7 +4719,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
       
- const helpmenu = `+ greet + *${pushname}* Senpai,
+ const helpmenu = `document.getElementById("greet"). *${pushname}* Senpai,
 
 I am *Reeya*, a bot developed by *Secret xD*.
 
