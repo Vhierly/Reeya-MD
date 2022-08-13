@@ -46,6 +46,17 @@ const xfarrapi = require('xfarr-api')
 const { hentai } = require('./lib/scraper2.js')
 let { msgFilter } = require('./lib/antispam')
 const { mediafireDl } = require('./lib/mediafire.js')
+var myDate = new Date();
+var hrs = myDate.getHours();
+
+var greet;
+
+if (hrs < 12)
+  greet = 'Ohayou';
+else if (hrs >= 12 && hrs <= 17)
+  greet = 'Konnichiwa';
+else if (hrs >= 17 && hrs <= 24)
+  greet = 'Konbanwa';
 
 /*
 // News api (DHN-api) //
@@ -4708,7 +4719,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
       
- const helpmenu = `Konichiwa *${pushname}* Senpai,
+ const helpmenu = `+ greet + *${pushname}* Senpai,
 
 I am *Reeya*, a bot developed by *Secret xD*.
 
